@@ -1,4 +1,4 @@
-import 'package:admin/controllers/MenuAppController.dart';
+import 'package:admin/controllers/menu_app_controller.dart';
 import 'package:admin/responsive.dart';
 import 'package:admin/screens/dashboard/dashboard_screen.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +13,7 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       key: context.read<MenuAppController>().scaffoldKey,
-      drawer: SideMenu(),
+      drawer: const SideMenu(),
       body: SafeArea(
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
